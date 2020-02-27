@@ -15,6 +15,7 @@ func main() {
 		fmt.Println("go collins 命令行版本")
 		fmt.Println("传入第一个参数为要查询的值 eg: hello")
 		fmt.Println("author : whisperjie")
+		fmt.Println("address : https://github.com/whisperjie")
 		return
 	}
 	keyword := os.Args[1]
@@ -32,7 +33,7 @@ func main() {
 		//var listMeaning=[size]string
 		s := ""
 		for i := range list {
-			if strings.Index(list[i], ".") == 1 {
+			if strings.Index(list[i], ".") == 1 || strings.Index(list[i], ".") == 2 {
 				s = s + "\n" + list[i] + " "
 			} else {
 				s = s + list[i] + " "
